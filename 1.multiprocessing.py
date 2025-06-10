@@ -26,6 +26,7 @@ def main():
     for item in range(3):
         process = multiprocessing.Process(
             target=process_core,
+            # args是元组类型，所以60后面有逗号
             args=(
                 1,
                 60,
